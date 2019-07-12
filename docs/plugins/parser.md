@@ -7,7 +7,7 @@
 | timeFormat | - |  |
 | keyName | log |  |
 | reserveData | true |  |
-| removeKeyNameField | log |  |
+| removeKeyNameField | true |  |
 ## Plugin template
 ```
 <filter {{ .pattern }}.** >
