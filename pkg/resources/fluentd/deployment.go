@@ -164,10 +164,7 @@ func generateVolume(fluentd *loggingv1alpha1.Fluentd) (v []corev1.Volume) {
 		{
 			Name: "buffer",
 			VolumeSource: corev1.VolumeSource{
-				PersistentVolumeClaim: &corev1.PersistentVolumeClaimVolumeSource{
-					ClaimName: "fluentd-buffer",
-					ReadOnly:  false,
-				},
+				EmptyDir: &corev1.EmptyDirVolumeSource {},
 			},
 		},
 	}
